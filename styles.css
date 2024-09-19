@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto','sans-serif',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'sans-serif',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
 }
 
 body{
@@ -37,14 +38,13 @@ body{
 }
 
 .wave-up{
-    
     width: 100%;
-    height: 400px;
+    height: 1250px;
 }
 
-.wave-down{
+.wave-down{ 
     width: 100%;
-    height: 300px;
+    height: 800px;
 }
 
 
@@ -58,9 +58,8 @@ animation: wave-up 2s infinite;
 */
 
 
-.calculator-container .formulario{
+.calculator-container .form-container{
     margin-top: 50px;
-    padding: 5px;
     width: 100%;
     height: auto;
     align-items: center;
@@ -69,8 +68,8 @@ animation: wave-up 2s infinite;
 }
 
 
-.calculator-container .formulario button{
-    width: 20%;
+.calculator-container .form-container button{
+    width: 25%;
     margin: 0 auto;
     padding: 10px;
     font-size: 18px;
@@ -82,30 +81,35 @@ animation: wave-up 2s infinite;
     transition: all 0.5s;
 }
 
-.calculator-container .formulario button:hover{
+.calculator-container .form-container button:hover{
     background-color: #9c023e;
 }
 
-.calculator-container .formulario input{
+.calculator-container .form-container input{
     font-size: 18px;
-    width: 80%;
+    width: 50%;
     height: auto;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border-radius: 30px;
     border: none;
     outline: none;
     text-align: center;
+    transform: all 0.5s ease-in-out;
 }
 
 input:focus::placeholder{
     color: transparent;
 }
 
+input:focus{
+    box-shadow: 0 0 5px #1c1b1c;
+}
 
-.calculator-container .formulario label{
+
+.calculator-container .form-container label{
     display: block;    
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
