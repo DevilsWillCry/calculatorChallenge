@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Calculadora</title>
+    <title>Calculadora de porcentajes</title>
+    <link rel="icon" type="icon" href="https://cdn-icons-png.flaticon.com/512/4341/4341087.png">
     <meta name="author" content="Miguel Angel - Calculadora">
     <meta name="description" content="Creación de una calculadora para propinas en base a porcentajes">
     <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
@@ -25,16 +26,17 @@
             <input type="text" id = "tip" placeholder = "Ingrese el porcentaje de la propina."><br>
             <button id="button-calculator" type="submit" form="form-container">Calcular</button>
         </form>
-        <div class="results-container">
-            <h2>Resultados:</h2>
-            <p id="total-bill">A</p>
-            <p id="tip-amount">A</p>
-            <p id="total-amount">A</p>
-        </div>
-        <svg class="wave-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 120 1440 80">
-            <path fill="#b50556" fill-opacity="1" d="M0,288L30,250.7C60,213,120,139,180,112C240,85,300,107,360,106.7C420,107,480,85,540,106.7C600,128,660,192,720,197.3C780,203,840,149,900,122.7C960,96,1020,96,1080,128C1140,160,1200,224,1260,245.3C1320,267,1380,245,1410,234.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+        <svg class="wave-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1440 80">
+            <path fill="#b50556" fill-opacity="1" d="M0,288L30,250.7C60,213,120,139,180,112C240,85,300,107,360,106.7C420,107,480,85,540,106.7C600,128,660,192,720,197.3C780,203,840,149,900,122.7C960,96,1020,96,1080,128C1140,160,1200,224,1260,245.3C1320,267,1380,245,1410,234.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+        </svg>
     </div>
-
-    <script src="script.js"></script>
+    <div class="results-container">
+        <button id="button-back"><i class="fa-solid fa-arrow-left"></i></button>
+        <h1>Resultados</h1>
+        <p id="total-bill">Total de la cuenta: <span class="total-bill-js">A</span>$</p>
+        <p id="tip-amount">Propina: <span class="tip-amount-js">A</span>$</p>
+        <p id="total-amount">Total a pagar: <span class="total-amount-js">A</span>$</p>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
