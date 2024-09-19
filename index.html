@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <meta name="author" content="Miguel Angel - Calculadora">
+    <meta name="description" content="Creación de una calculadora para propinas en base a porcentajes">
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="10"> Refresca documento cada x tiempo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <svg class="wave-up" xmlns="http://www.w3.org/2000/svg" viewBox="10 200 1340 10">
+            <path fill="#b50556" fill-opacity="1" d="M0,288L30,250.7C60,213,120,139,180,112C240,85,300,107,360,106.7C420,107,480,85,540,106.7C600,128,660,192,720,197.3C780,203,840,149,900,122.7C960,96,1020,96,1080,128C1140,160,1200,224,1260,245.3C1320,267,1380,245,1410,234.7L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+        </svg>
+        <h1>Calculadora de propinas</h1>
+        <form class="formulario">
+            <input type="text" id = "bill" placeholder = "Ingrese el valor total de la cuenta."><br>
+
+            <input type="text" id = "tip" placeholder = "Ingrese el porcentaje de la propina."><br>
+            <button type="submit" form="formulario">Calcular</button>
+        </form>
+        <div class="results-container">
+            <h2>Resultados:</h2>
+            <p id="total-bill">A</p>
+            <p id="tip-amount">A</p>
+            <p id="total-amount">A</p>
+        </div>
+        <svg class="wave-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1340 100">
+            <path fill="#b50556" fill-opacity="1" d="M0,288L30,250.7C60,213,120,139,180,112C240,85,300,107,360,106.7C420,107,480,85,540,106.7C600,128,660,192,720,197.3C780,203,840,149,900,122.7C960,96,1020,96,1080,128C1140,160,1200,224,1260,245.3C1320,267,1380,245,1410,234.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
